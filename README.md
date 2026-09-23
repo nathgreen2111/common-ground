@@ -58,10 +58,12 @@ vercel --prod
 
 The copy is written to your brief, but a few things are my suggestions rather than things you told me:
 
-- **Prices.** £750 position review; negotiation £1,500 / £2,500 / £3,500 by number of creditors; £150 a month for monitoring; negotiation fee spread over three months. Change these in `index.html` and `pricing.html`.
+- **Prices.** £400 position review (the only upfront fee); negotiation £500 per creditor, only once that creditor agrees in writing, spread over 6 months; optional monitoring £150 a month. The amounts appear in `index.html`, `how-it-works.html` and `pricing.html`. The calculator on the pricing page reads its numbers from `data-review`, `data-per` and `data-months` on the `<div class="calc">` element, so change those too.
+- **The example chart.** The homepage "before and after" figures (£18,600 down to £8,900 a month) are illustrative and labelled that way. Swap in real numbers once you have a client case you can use.
 - **Commission promise.** The site says any refinancing commission is declared and deducted from your fee. Keep it only if you're happy to commit to it.
 - **Response times.** "Usually the same day", "within one working day" and "usually within a week" for the review.
-- **Your story.** The About page says you're 22, opened your first business at 18, run a multi-site leisure group with around 40 staff, won an industry award, and turned it around. Make sure you're comfortable with every line.
+- **Your story.** The About page says you're 22, opened your first business at 18, run a multi-site leisure group with around 40 staff, and turned it around. Make sure you're comfortable with every line.
+- **Engagement letter.** Because the negotiation fee is only due once terms are agreed, your engagement letter should define "agreed" (written confirmation from the creditor) and cover what happens if a client stops part-way through.
 - **Legal wording.** The footer disclaimer and privacy notice are sensible starting points, not legal advice. Have someone check them, especially where the site talks about what you don't do.
 
 ## Also worth doing before launch

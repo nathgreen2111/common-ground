@@ -19,6 +19,24 @@
     });
   }
 
+  // Pricing calculator
+  var calc = document.querySelector(".calc");
+  if (calc) {
+    var range = calc.querySelector("input[type=range]");
+    var n = calc.querySelector(".calc-n");
+    var per = +calc.getAttribute("data-per"), months = +calc.getAttribute("data-months");
+    var fmt = function (v) { return "\u00a3" + Math.round(v).toLocaleString("en-GB"); };
+    var update = function () {
+      var c = +range.value, fee = c * per;
+      n.textContent = c;
+      range.setAttribute("aria-valuetext", c + (c === 1 ? " creditor" : " creditors"));
+      calc.querySelector("[data-out=fee]").textContent = fmt(fee);
+      calc.querySelector("[data-out=monthly]").textContent = fmt(fee / months);
+    };
+    range.addEventListener("input", update);
+    update();
+  }
+
   // Enquiry form (Formspree). Set the form's action to your Formspree endpoint.
   var form = document.getElementById("enquiry-form");
   if (!form) return;

@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing | Common Ground Advisory</title>
-<meta name="description" content="Fixed fees, agreed in writing before you pay anything. A free 30-minute call, a £750 position review and lender negotiation from £1,500. Never a percentage of your debt.">
+<meta name="description" content="A £400 position review is the only upfront cost. The negotiation fee is only due once your creditors agree, and it's spread over 6 months.">
 <link rel="canonical" href="https://www.commongroundadvisory.co.uk/pricing">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Common Ground Advisory">
 <meta property="og:title" content="Pricing | Common Ground Advisory">
-<meta property="og:description" content="Fixed fees, agreed in writing before you pay anything. A free 30-minute call, a £750 position review and lender negotiation from £1,500. Never a percentage of your debt.">
+<meta property="og:description" content="A £400 position review is the only upfront cost. The negotiation fee is only due once your creditors agree, and it's spread over 6 months.">
 <meta property="og:url" content="https://www.commongroundadvisory.co.uk/pricing">
 <meta property="og:image" content="https://www.commongroundadvisory.co.uk/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -47,88 +47,70 @@
 <section class="page-head">
   <div class="wrap">
     <h1>Pricing</h1>
-    <p class="lead">Fixed fees, agreed in writing before you pay anything. Never a percentage of what you owe.</p>
+    <p class="lead">The review is the only thing you pay upfront. The rest is only due once your creditors agree.</p>
   </div>
 </section>
 
 <section class="band">
   <div class="wrap">
-    <table class="ledger">
-      <caption>All fees are fixed and confirmed in writing before any work starts.</caption>
-      <thead>
-        <tr><th scope="col">Service</th><th scope="col">What you get</th><th scope="col" class="amt">Fee</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Intro call</th>
-          <td class="desc">30 minutes by phone or video, and an honest view on whether we can help.</td>
-          <td class="amt">Free</td>
-        </tr>
-        <tr>
-          <th scope="row">Position review</th>
-          <td class="desc">A full review of your accounts, bank statements and agreements, plus a written summary of your position and our proposed plan. Yours to keep, whatever you decide.</td>
-          <td class="amt">&pound;750<small>fixed</small></td>
-        </tr>
-        <tr>
-          <th scope="row">Lender negotiation</th>
-          <td class="desc">We deal with every creditor directly until new terms are agreed in writing. Your quote is fixed after the review, based on how many creditors are involved.</td>
-          <td class="amt"><span class="from">from</span>&pound;1,500<small>can be spread over 3 months</small></td>
-        </tr>
-        <tr>
-          <th scope="row">Staying on track</th>
-          <td class="desc">Optional. We stay on as your point of contact with creditors and step in early if anything slips.</td>
-          <td class="amt">&pound;150<small>per month, cancel anytime</small></td>
-        </tr>
-      </tbody>
-    </table>
+    <ol class="costline">
+      <li><span class="bump bump-free">&pound;0</span><h3>Intro call</h3><p>30 minutes, free.</p></li>
+      <li><span class="bump bump-review">&pound;400</span><h3>Position review</h3><p>The only thing you pay upfront.</p></li>
+      <li><span class="bump bump-wait">&pound;0</span><h3>Negotiation</h3><p>Nothing to pay while we negotiate.</p></li>
+      <li><span class="bump bump-agreed">&pound;500</span><h3>Terms agreed</h3><p>Per creditor who agrees, spread over 6 months.</p></li>
+    </ol>
+  </div>
+</section>
 
-    <div class="mt-l">
-      <div class="section-head">
-        <h2>Lender negotiation fees</h2>
-        <p class="muted">Your quote depends on how many creditors we need to deal with. Once it&rsquo;s agreed, it&rsquo;s fixed, however long the negotiations take.</p>
+<section class="band band-sage">
+  <div class="wrap split">
+    <div class="section-head">
+      <h2>Work out your cost</h2>
+      <p class="muted">Move the slider to match how many creditors you have. You only pay for the ones who agree.</p>
+    </div>
+    <div class="calc" data-review="400" data-per="500" data-months="6">
+      <div class="calc-in">
+        <label for="creditors">How many creditors?</label>
+        <output id="creditors-out" for="creditors" class="calc-n">3</output>
+        <input id="creditors" type="range" min="1" max="10" step="1" value="3">
       </div>
-      <dl class="tiers">
-        <div><dt>1 to 2 creditors</dt><dd>&pound;1,500</dd></div>
-        <div><dt>3 to 5 creditors</dt><dd>&pound;2,500</dd></div>
-        <div><dt>6 or more creditors</dt><dd>&pound;3,500</dd></div>
+      <dl class="calc-out" aria-live="polite">
+        <div><dt>Position review, upfront</dt><dd data-out="review">&pound;400</dd></div>
+        <div><dt>Negotiation, only once agreed</dt><dd data-out="fee">&pound;1,500</dd></div>
+        <div class="calc-monthly"><dt>Spread over 6 months</dt><dd><span data-out="monthly">&pound;250</span><small> a month</small></dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section class="band band-sage">
+<section class="band">
   <div class="wrap">
-    <div class="section-head"><h2>How we charge</h2></div>
+    <h2 class="section-title">How we charge</h2>
     <dl class="principles">
-      <div><dt>Fixed and in writing</dt><dd>You&rsquo;ll know the total before you commit. No hourly billing, no surprise invoices.</dd></div>
-      <div><dt>Never a percentage of your debt</dt><dd>What you owe doesn&rsquo;t change what you pay us.</dd></div>
-      <div><dt>No big upfront lump</dt><dd>The negotiation fee can be spread over three monthly payments.</dd></div>
-      <div><dt>If we can&rsquo;t help, you pay nothing</dt><dd>We&rsquo;ll tell you on the first call and point you to someone who can.</dd></div>
-      <div><dt>Worth it, or we&rsquo;ll say so</dt><dd>If our fee looks like more than the plan is likely to save you, we&rsquo;ll tell you before you spend a penny.</dd></div>
-      <div><dt>Commission declared and deducted</dt><dd>If we introduce refinancing and receive a commission, we&rsquo;ll tell you the amount upfront and take it off our fee.</dd></div>
+      <div><dt>Never a percentage</dt><dd>What you owe doesn&rsquo;t change what you pay us.</dd></div>
+      <div><dt>Nothing until it&rsquo;s agreed</dt><dd>The negotiation fee is only due once a creditor confirms new terms in writing.</dd></div>
+      <div><dt>Spread over 6 months</dt><dd>So the fee never undoes the plan.</dd></div>
+      <div><dt>Commission declared</dt><dd>If we introduce refinancing, any commission is disclosed and taken off our fee.</dd></div>
     </dl>
+    <p class="small muted mt-m">Optional: we can stay on as your point of contact with creditors for &pound;150 a month, cancel anytime.</p>
   </div>
 </section>
 
-<section class="band">
+<section class="band band-sage">
   <div class="wrap">
-    <div class="section-head"><h2>Questions about fees</h2></div>
+    <h2 class="section-title">Questions about fees</h2>
     <div class="faq">
       <details>
-        <summary>Why do you charge for the position review?</summary>
-        <div class="answer"><p>Because it&rsquo;s proper work: going through every agreement and statement and building a plan that will stand up to a lender&rsquo;s scrutiny. The written review is yours to keep, and some directors use it to go back to their bank or accountant themselves.</p></div>
+        <summary>What if only some creditors agree?</summary>
+        <div class="answer"><p>You only pay for the ones who do.</p></div>
       </details>
       <details>
-        <summary>What if a creditor won&rsquo;t agree?</summary>
-        <div class="answer"><p>Some won&rsquo;t at first. We keep going until each creditor has given a final answer, at no extra cost. If one flatly refuses, we&rsquo;ll talk you through your options, including whether a formal process would protect you better.</p></div>
+        <summary>What counts as agreed?</summary>
+        <div class="answer"><p>Written confirmation from the creditor of the new terms.</p></div>
       </details>
       <details>
-        <summary>Can I pay monthly?</summary>
-        <div class="answer"><p>Yes. The negotiation fee can be spread over three monthly payments, and the optional monitoring is billed monthly.</p></div>
-      </details>
-      <details>
-        <summary>Do you get paid by lenders or insolvency practitioners?</summary>
-        <div class="answer"><p>We don&rsquo;t take payments from the creditors we&rsquo;re negotiating with. If we introduce you to a finance provider or broker and they pay us a commission, we&rsquo;ll tell you the amount and deduct it from our fee. If we refer you to an insolvency practitioner, we&rsquo;ll tell you whether any referral fee is involved.</p></div>
+        <summary>Why pay for the review?</summary>
+        <div class="answer"><p>It&rsquo;s the proper work: every agreement and statement, and a plan that stands up to a lender. It&rsquo;s yours to keep, whatever you decide.</p></div>
       </details>
     </div>
   </div>
@@ -138,7 +120,7 @@
   <div class="wrap">
     <div>
       <h2>The sooner you call, the more options you have.</h2>
-      <p>Lenders are usually more flexible before things reach defaults and court claims. The first 30 minutes cost nothing.</p>
+      <p>The first 30 minutes cost nothing.</p>
     </div>
     <a class="btn btn-primary" href="/contact">Book a free call</a>
   </div>
