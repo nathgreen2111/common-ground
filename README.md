@@ -1,13 +1,15 @@
 # Common Ground Advisory: website and brand
 
 ```
-site/    the website, ready for Vercel (plain HTML and CSS, no build step)
-brand/   logo files (SVG and PNG), app icon and a one-page brand sheet
+*.html, assets/   the website, ready for Vercel (plain HTML and CSS, no build step)
+brand/            logo files (SVG and PNG), app icon and a one-page brand sheet
 ```
+
+The site lives at the repository root so Vercel serves it without any extra configuration.
 
 ## 1. Replace the placeholders
 
-Use "Replace in files" in VS Code (or any editor) across the `site` folder.
+Use "Replace in files" in VS Code (or any editor) across the repository.
 
 | Find | Replace with | Where it appears |
 |---|---|---|
@@ -33,22 +35,20 @@ Until you do this, the form tells visitors to email you instead, so nothing brea
 
 The About page and the homepage show a placeholder where your photo goes.
 
-1. Save a portrait photo as `site/assets/img/nathan.jpg`. Upright, about 800 × 1000px, works best.
+1. Save a portrait photo as `assets/img/nathan.jpg`. Upright, about 800 × 1000px, works best.
 2. In `index.html` and `about.html`, find the comment that starts `Replace this placeholder with your photo`.
 3. Uncomment the `<img>` line inside it, then delete the `<svg>...</svg>` block underneath.
 
 ## 4. Deploy on Vercel
 
 **Option A, from GitHub (easiest to update later)**
-1. Put the `site` folder in a new GitHub repository.
-2. In Vercel, choose Add New → Project and import the repo.
-3. Set Framework Preset to **Other**. Leave the build command empty. Output directory: the repository root (or `site` if you pushed the whole folder).
-4. Deploy, then add your domain under Settings → Domains.
+1. In Vercel, choose Add New → Project and import this repo.
+2. Set Framework Preset to **Other**. Leave the build command empty and the Root Directory as the repository root.
+3. Deploy, then add your domain under Settings → Domains.
 
 **Option B, from your computer**
 ```
 npm i -g vercel
-cd site
 vercel --prod
 ```
 
@@ -73,6 +73,6 @@ The copy is written to your brief, but a few things are my suggestions rather th
 
 ## Brand
 
-- **Font:** Archivo, free under the SIL Open Font License (`site/assets/fonts/OFL.txt`). It's hosted with the site, so there are no Google requests and no cookie banner needed.
+- **Font:** Archivo, free under the SIL Open Font License (`assets/fonts/OFL.txt`). It's hosted with the site, so there are no Google requests and no cookie banner needed.
 - **Colours:** Forest `#1D4A38`, Ink `#15261F`, Marigold `#F1B43C`, Moss `#6E9A83`, Sage `#E6EEE9`, Paper `#FBFCFA`.
 - **Logo files:** `brand/logo.svg` (full), `logo-reverse.svg` (for dark backgrounds), `logo-inline.svg` (one line), `logo-mono.svg` (one colour), `mark.svg` (symbol only), `icon-512.png` (social avatar). PNG versions are included for email signatures and documents.
