@@ -37,6 +37,50 @@
     update();
   }
 
+  // Quick check ("Can we help?")
+  var qc = document.querySelector("[data-qcheck]");
+  if (qc) {
+    var qs = [].slice.call(qc.querySelectorAll(".qc-questions li"));
+    var answers = qc.querySelector(".qc-answers");
+    var head = qc.querySelector(".qc-head");
+    var stepEl = qc.querySelector("[data-qc-step]");
+    var bar = qc.querySelector("[data-qc-bar]");
+    var results = [].slice.call(qc.querySelectorAll("[data-result]"));
+    var restart = qc.querySelector("[data-qc-restart]");
+    var i = 0;
+    var showQ = function (n) {
+      qs.forEach(function (q, k) { q.hidden = k !== n; });
+      stepEl.textContent = n + 1;
+      bar.style.width = (n / qs.length * 100) + "%";
+    };
+    var finish = function (key) {
+      qs.forEach(function (q) { q.hidden = true; });
+      answers.hidden = true; head.hidden = true; restart.hidden = false;
+      results.forEach(function (r) { r.hidden = r.getAttribute("data-result") !== key; });
+      var t = qc.querySelector('[data-result="' + key + '"] .qc-title');
+      if (t) { t.setAttribute("tabindex", "-1"); t.focus(); }
+    };
+    answers.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-answer]");
+      if (!b) return;
+      var q = qs[i];
+      if (b.getAttribute("data-answer") === q.getAttribute("data-bad")) {
+        var key = q.getAttribute("data-q");
+        finish(key === "repay" ? "sales" : key);
+        return;
+      }
+      i += 1;
+      if (i >= qs.length) finish("good"); else showQ(i);
+    });
+    restart.addEventListener("click", function () {
+      i = 0; answers.hidden = false; head.hidden = false; restart.hidden = true;
+      results.forEach(function (r) { r.hidden = true; });
+      showQ(0);
+      answers.querySelector("button").focus();
+    });
+    showQ(0);
+  }
+
   // Enquiry form (Formspree). Set the form's action to your Formspree endpoint.
   var form = document.getElementById("enquiry-form");
   if (!form) return;

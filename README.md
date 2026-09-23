@@ -33,10 +33,10 @@ Until you do this, the form tells visitors to email you instead, so nothing brea
 
 ## 3. Add your photo
 
-The About page and the homepage show a placeholder where your photo goes.
+The About page shows a placeholder where your photo goes.
 
 1. Save a portrait photo as `assets/img/nathan.jpg`. Upright, about 800 × 1000px, works best.
-2. In `index.html` and `about.html`, find the comment that starts `Replace this placeholder with your photo`.
+2. In `about.html`, find the comment that starts `Replace this placeholder with your photo`.
 3. Uncomment the `<img>` line inside it, then delete the `<svg>...</svg>` block underneath.
 
 ## 4. Deploy on Vercel
@@ -59,6 +59,7 @@ vercel --prod
 The copy is written to your brief, but a few things are my suggestions rather than things you told me:
 
 - **Prices.** £400 position review (the only upfront fee); negotiation £500 per creditor, only once that creditor agrees in writing, spread over 6 months; optional monitoring £150 a month. The amounts appear in `index.html`, `how-it-works.html` and `pricing.html`. The calculator on the pricing page reads its numbers from `data-review`, `data-per` and `data-months` on the `<div class="calc">` element, so change those too.
+- **The 1-minute check.** The four "Can we help?" questions and the answers people see are near the top of `index.html`. The yes/no logic lives in `assets/js/site.js`.
 - **The example chart.** The homepage "before and after" figures (£18,600 down to £8,900 a month) are illustrative and labelled that way. Swap in real numbers once you have a client case you can use.
 - **Commission promise.** The site says any refinancing commission is declared and deducted from your fee. Keep it only if you're happy to commit to it.
 - **Response times.** "Usually the same day", "within one working day" and "usually within a week" for the review.
