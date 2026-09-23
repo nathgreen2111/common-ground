@@ -66,6 +66,10 @@ The copy is written to your brief, but a few things are my suggestions rather th
 - **Engagement letter.** Because the negotiation fee is only due once terms are agreed, your engagement letter should define "agreed" (written confirmation from the creditor) and cover what happens if a client stops part-way through.
 - **Legal wording.** The footer disclaimer and privacy notice are sensible starting points, not legal advice. Have someone check them, especially where the site talks about what you don't do.
 
+## Guides
+
+The site has a Guides section (`guides/`) with two plain-English guides: personal guarantees, and statutory demands and winding-up petitions. They're written for England and Wales and marked "Last reviewed September 2026". Re-check them at least once a year, and whenever insolvency rules change.
+
 ## Also worth doing before launch
 
 - Register with the ICO (the data protection fee) once you're collecting enquiries.
